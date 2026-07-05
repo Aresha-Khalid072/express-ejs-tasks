@@ -9,11 +9,26 @@
   <body>
     <div class="main min-h-screen w-full bg-zinc-900 text-white p-10">
       <a href="/" class="text-blue-500 inline-block mb-10">Go Back To Home</a>
-       <form action="/edit" method="post">
-            <input class="block px-5 py-2 bg-zinc-800 w-1/4 rounded-md outline-none" type="text" placeholder="Previous Name" name="previous" value="<%= filename %>">
-         <input class="block px-5 py-2 bg-zinc-800 w-1/4 rounded-md outline-none mt-3" type="text" placeholder="New Name" name="new">
-            <input class="mt-2 bg-blue-600 px-5 py-2 rounded-md" type="submit" value="Update Name">
-        </form>
+      <form action="/edit" method="post">
+        <input
+          class="block px-5 py-2 bg-zinc-800 w-1/4 rounded-md outline-none"
+          type="text"
+          placeholder="Previous Name"
+          name="previous"
+          value="<%= filename %>"
+        />
+        <input
+          class="block px-5 py-2 bg-zinc-800 w-1/4 rounded-md outline-none mt-3"
+          type="text"
+          placeholder="New Name"
+          name="new"
+        />
+        <input
+          class="mt-2 bg-blue-600 px-5 py-2 rounded-md"
+          type="submit"
+          value="Update Name"
+        />
+      </form>
     </div>
   </body>
 </html>
